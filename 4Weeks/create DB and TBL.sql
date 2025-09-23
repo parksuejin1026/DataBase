@@ -8,6 +8,7 @@ drop database if exists tabledb;
 create database tableDB;
 -- tableDB 지정
 use tableDB;
+drop table if exists userTBL, buyTBL;
 -- table 만들기, 생성
 create table userTBL -- 회원 테이블
 (   userID char(8), -- 사용자 아이디
