@@ -1,0 +1,2 @@
+use tableDB;
+describe usertbl;
