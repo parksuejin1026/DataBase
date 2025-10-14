@@ -1,0 +1,52 @@
+# 📖 Chapter 01: 데이터베이스의 이해와 MySQL 설치
+
+## 🎯 학습 목표
+* [cite_start]**데이터베이스(DB)와 DBMS의 개념**을 이해합니다[cite: 4421].
+* [cite_start]**MySQL 프로그램의 역할**을 알아봅니다[cite: 4422].
+* [cite_start]**MySQL Community**를 다운로드하여 설치하고 환경 설정합니다[cite: 4423, 4550].
+* [cite_start]**샘플 데이터베이스**를 구축합니다[cite: 4424].
+
+---
+
+## 💡 데이터베이스 및 DBMS 개요
+
+### 1. 정의 및 개념
+* **데이터베이스 (DB)**: 여러 사용자나 응용 프로그램이 공유하고 **동시에 접근 가능한 '데이터의 집합'**입니다. [cite_start]'데이터의 저장 공간' 자체를 의미하기도 합니다[cite: 4427, 4428, 4429].
+* [cite_start]**DBMS (DataBase Management System)**: **데이터베이스를 관리하고 운영하는 소프트웨어**입니다[cite: 4430, 4431]. [cite_start]사용자나 응용 프로그램은 DBMS가 관리하는 데이터에 접속하여 **데이터를 공유**합니다[cite: 4432, 4442].
+
+### 2. 데이터베이스의 주요 특징
+| 특징 | 설명 |
+| :--- | :--- |
+| **데이터의 무결성** | [cite_start]데이터베이스 안의 데이터는 어떤 경로를 통해 들어왔든 **오류가 있어서는 안 됩니다**[cite: 4455]. |
+| **데이터의 독립성** | [cite_start]데이터베이스와 응용 프로그램은 서로 **독립적인 관계**입니다[cite: 4455]. |
+| **데이터 중복 최소화** | [cite_start]동일한 데이터가 여러 군데 **중복 저장되는 것을 방지**합니다[cite: 4456]. |
+| **데이터의 안전성 향상** | [cite_start]데이터가 손상되면 원래 상태로 **복원 또는 복구**할 수 있습니다[cite: 4458]. |
+
+### 3. DBMS의 분류
+* **계층형 DBMS**: 각 계층이 **트리 형태**를 띠며 **1:N 관계**를 가집니다. [cite_start]구조 변경이 까다롭고 접근의 유연성이 부족합니다[cite: 4461, 4462, 4463, 4464].
+* [cite_start]**망형 DBMS**: **1:1, 1:N, N:M 관계**가 모두 지원되어 효과적인 데이터 추출이 가능하지만, 복잡한 내부 포인터로 인해 프로그래머가 모든 구조를 이해해야 합니다[cite: 4476, 4477, 4478, 4479].
+* [cite_start]**관계형 DBMS (RDBMS)**: **모든 데이터가 테이블에 저장**되며, 테이블 간의 관계는 **기본 키(PK)와 외래 키(FK)**를 사용하여 맺습니다[cite: 4491, 4492, 4493]. [cite_start]업무 변화에 순응하기 좋고 유지·보수가 편리합니다[cite: 4494].
+* [cite_start]**SQL**: 데이터베이스를 조작하는 언어이며, DBMS 제작 회사와 **독립적**이고 이식성이 좋습니다[cite: 4520, 4522, 4523].
+
+---
+
+## 💻 MySQL 설치 및 환경 설정
+
+### 1. MySQL 개요
+* [cite_start]**MySQL**: 오라클에서 제작한 DBMS 소프트웨어로, **오픈 소스**로 제공됩니다[cite: 4539, 4540, 4541].
+* [cite_start]**에디션**: 본 수업에서는 기능상 차이가 거의 없는 **무료 에디션인 Community 에디션**을 사용합니다[cite: 4549, 4550].
+
+### 2. 필수 설치 소프트웨어
+* [cite_start]**MySQL Server**: 서버 프로그램[cite: 4558].
+* [cite_start]**MySQL Workbench**: **GUI를 지원하는 통합 관리 툴**입니다[cite: 4558].
+* [cite_start]**Samples and Examples**: 샘플 데이터베이스를 설치하는 데 필요합니다[cite: 4558].
+
+### 3. 설치 및 설정 실습 요약
+1.  [cite_start]**설치 유형 선택**: `Custom`을 선택하여 **MySQL Server**, **MySQL Workbench**, **Samples and Examples**를 설치합니다[cite: 4656].
+2.  **환경 설정**:
+    * [cite_start]**Group Replication**: `Standalone MySQL Server / Classic MySQL Replication` 선택[cite: 4857].
+    * [cite_start]**Type and Networking**: `Config Type: Development Computer`, 포트 번호 `3306` 확인[cite: 4879, 4883].
+    * [cite_start]**Authentication Method**: `Use Strong Password Encryption` (권장) 선택[cite: 4909].
+    * [cite_start]**Accounts and Roles**: **Root 계정 비밀번호**를 설정합니다[cite: 4924, 4925].
+3.  [cite_start]**Workbench 설정**: MySQL Workbench 실행 후 [Edit] - [Preferences]에서 **'Safe Updates' 체크 표시를 해제**하여 `UPDATE`나 `DELETE` 문 사용 시 제약 없이 실행되도록 설정합니다[cite: 5231, 5241, 5257].
+4.  [cite_start]**Path 환경 변수 추가**: MySQL 실행 파일 경로(`C:\Program Files\MySQL\MySQL Server 8.0\bin`)를 `Path` 환경 변수에 추가하여 명령 프롬프트(PowerShell)에서 `mysql` 명령어를 바로 사용할 수 있게 합니다[cite: 5265, 5272].
