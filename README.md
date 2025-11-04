@@ -15,7 +15,7 @@
 | **Week6** | **데이터 검색과 그루핑** | `SELECT`, `WHERE`, `GROUP BY`, `HAVING` 절 활용 | **[학습 내용 보기](Study/CH05.md)** |
 | **Week7** | **(예비/보충 주차)** | - | - |
 | **Week8** | **🎉 중간고사** | **Week2 ~ Week7 학습 내용 총정리 및 평가** | - |
-| **Week9** | **SQL 기초 (DDL, DML, DCL)와 데이터 조회 (SELECT)** | SQL 언어 개요 (DDL, DML, DCL), SELECT 기본/특징, `WHERE` 검색 조건, 내장 함수, `ORDER BY`, `GROUP BY`, `HAVING` 활용 | **[학습 내용 보기](Study/9Weeks.pdf)** |
+| **Week9** | **SQL 기초 (DDL, DML, DCL)와 데이터 조회 (SELECT)** | SQL 언어 개요 (DDL, DML, DCL), SELECT 기본/특징, `WHERE` 검색 조건, 내장 함수, `ORDER BY`, `GROUP BY`, `HAVING` 활용 | **[학습 내용 보기](Study/9Weeks.md)** |
 
 ---
 
