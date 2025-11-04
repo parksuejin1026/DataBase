@@ -1,8 +1,5 @@
 # 📚 DataBase: SQL로 시작하는 데이터베이스 입문 과정 🚀
 
-[![GitHub stars](https://img.shields.io/github/stars/parksuejin1026/DataBase?style=social)](https://github.com/parksuejin1026/DataBase/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/parksuejin1026/DataBase?style=social)](https://github.com/parksuejin1026/DataBase/network/members)
-
 > **"데이터를 이해하고 관리하는 힘, SQL과 데이터베이스 기초부터 탄탄하게!"**
 
 ---
@@ -16,9 +13,11 @@
 | **Week4** | **데이터베이스 모델링의 이해** | 모델링 3단계 절차, Workbench EER 다이어그램 실습 | **[학습 내용 보기](Study/CH03.md)** |
 | **Week5** | **MySQL 툴과 유틸리티 사용법** | Workbench 기능, 사용자 권한, DB 백업 및 복원 실습 | **[학습 내용 보기](Study/CH04.md)** |
 | **Week6** | **데이터 검색과 그루핑** | `SELECT`, `WHERE`, `GROUP BY`, `HAVING` 절 활용 | **[학습 내용 보기](Study/CH05.md)** |
+| **Week7** | **(예비/보충 주차)** | - | - |
+| **Week8** | **🎉 중간고사** | **Week2 ~ Week7 학습 내용 총정리 및 평가** | - |
+| **Week9** | **SQL 기초 (DDL, DML, DCL)와 데이터 조회 (SELECT)** | SQL 언어 개요 (DDL, DML, DCL), SELECT 기본/특징, `WHERE` 검색 조건, 내장 함수, `ORDER BY`, `GROUP BY`, `HAVING` 활용 | **[학습 내용 보기](Study/CH05_SQL1.pdf)** |
 
 ---
-
 
 ## 🛠️ 실습 환경 및 도구
 
