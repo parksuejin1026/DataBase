@@ -54,6 +54,36 @@ insert into buytbl values (default, "PSJ","폭스바겐","자동차",500000000,1
 
 select * from buytbl; 
 
+
+
 -- 2000년생 이후만 테이블 testtbl33 에 삽입하세요
 create table testtbl33 (select userId,userName,birthyear from usertbl where birthyear >= 2000);
 select * from testtbl33;
+
+update usertbl
+set birthYear = 1980
+where userid = "key2";
+update usertbl
+set addr = "구로", mobile2 = "12345678"
+where userId= "yjs";
+select * from usertbl;
+-- KHD - > 이름을 최호동으로 변경
+update usertbl
+set userName = "최호동"
+where userId = "KHD";
+
+select * from usertbl 
+where userName = "최호동";
+
+use cookdb2;
+-- khd 삭제
+DELETE FROM buytbl 
+WHERE userid = "KHD";
+delete from usertbl
+where userId = "KHD";
+
+-- 함수 사용해서 키가 큰 순으로 정렬하기 
+use cookdb2;
+select row_number() over(order by height desc)
+"키큰순위",username, addr, heights
+from usertbl;
